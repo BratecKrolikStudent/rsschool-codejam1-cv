@@ -14,7 +14,7 @@ const PATH = {
 };
 
 gulp.task('sass', function() {
-  return gulp.src(`${PATH.SASS}/main.scss`)
+  return gulp.src(`${PATH.SASS}/app.scss`)
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest(PATH.CSS))
