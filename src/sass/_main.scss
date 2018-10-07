@@ -3,6 +3,10 @@ main.flex-container {
   display: flex;
   flex-wrap: wrap;
 
+  .flex-block-6 {
+    width: 50%;
+  }
+
   .flex-block-12 {
     width: 100%;
   }
@@ -47,5 +51,15 @@ main.flex-container {
 
   .block-content {
     width: 90%;
+  }
+}
+
+
+.profile-table {
+  margin-top: 16px;
+
+  .fa {
+    width: 30px;
+    color: $secondary-color;
   }
 }
