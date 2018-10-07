@@ -5,12 +5,12 @@ const pug = require('gulp-pug');
 const browserSync = require('browser-sync');
 
 const PATH = {
-  PUBLIC: './public',
+  PUBLIC: './',
   SRC: './src',
   PAGE: './src/page',
   SASS: './src/sass',
-  CSS: './public/css',
-  IMAGE: './public/images'
+  CSS: './css',
+  IMAGE: './images'
 };
 
 gulp.task('sass', function() {
