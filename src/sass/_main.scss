@@ -1,0 +1,51 @@
+main.flex-container {
+  margin-top: $main-container-margin;
+  display: flex;
+  flex-wrap: wrap;
+
+  .flex-block-12 {
+    width: 100%;
+  }
+
+  .block-title-wrapper {
+    position: relative;
+    
+    .title {
+      margin-left: 20px;
+      display: inline;
+      text-transform: uppercase;
+
+      &::after {
+        content: '';
+        width: 350px;
+        background-color: $primary-color;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: -12px;
+      }
+    }
+
+    .fa {
+      font-size: 2rem;
+      padding: 10px 0;
+      color: $secondary-color;
+      
+      &::after {
+        content: '';
+        width: 3px;
+        background-color: $primary-color;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: -15px;
+        height: 3rem;
+
+      }
+    }
+  }
+
+  .block-content {
+    width: 90%;
+  }
+}
