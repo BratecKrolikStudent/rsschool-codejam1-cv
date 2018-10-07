@@ -1,11 +1,11 @@
 main.flex-container {
-  margin-top: $main-container-margin;
   display: flex;
   flex-wrap: wrap;
+  margin-top: $main-container-margin;
 
   .flex-block-6 {
-    margin: 10px 0;
     width: 50%;
+    margin: 10px 0;
   }
 
   .flex-block-12 {
@@ -22,31 +22,29 @@ main.flex-container {
       text-transform: uppercase;
 
       &::after {
-        content: '';
-        width: 350px;
-        background-color: $primary-color;
-        height: 3px;
         position: absolute;
         bottom: 0;
         left: -12px;
+        width: 350px;
+        height: 3px;
+        background-color: $primary-color;
+        content: '';
       }
     }
 
     .fa {
-      font-size: 2rem;
       padding: 10px 0;
+      font-size: 2rem;
       color: $secondary-color;
       
       &::after {
-        content: '';
-        width: 3px;
-        background-color: $primary-color;
-        height: 3px;
         position: absolute;
         bottom: 0;
         left: -15px;
+        width: 3px;
         height: 3rem;
-
+        background-color: $primary-color;
+        content: '';
       }
     }
   }
@@ -71,8 +69,8 @@ main.flex-container {
     padding: 0;
 
     li {
-      list-style: none;
       margin: 5px 0;
+      list-style: none;
   
       &::before {
         margin-right: 10px;
